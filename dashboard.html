@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h2>Financial Dashboard</h2>
+
+<div class="container">
+    <form onsubmit="addTransaction(event)">
+        <input type="text" id="desc" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <h3>Transactions</h3>
+    <ul id="list"></ul>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
